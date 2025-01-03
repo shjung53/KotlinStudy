@@ -3,6 +3,9 @@ package flow
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.runBlocking
 
+/***
+ * https://velog.io/@shjung53/kotlin-flow-2
+ */
 
 fun main(): Unit = runBlocking {
     val list = (1..5)
