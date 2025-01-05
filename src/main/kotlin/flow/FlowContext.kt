@@ -13,7 +13,7 @@ fun main() = runBlocking {
     simple().collect { value -> log("Collected $value") }
 }
 
-fun simple(): Flow<Int> = flow {
+private fun simple(): Flow<Int> = flow {
     withContext(Dispatchers.Default) {}
     for (i in 1..3) {
         Thread.sleep(100) // cpu 자원을 사용하는 척
